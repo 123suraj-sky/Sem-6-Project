@@ -1,0 +1,3 @@
+create a form section which takes the query of user and after submit show a new page that form submitted successfully.
+
+after that also add a go to button
