@@ -1,0 +1,25 @@
+extends base.pug
+//- using template in base.pug
+
+//- it will put below content in place of block scripts
+block scripts 
+    script(src="/static/index.js") 
+
+block style 
+    style 
+        include ../static/style.css 
+        include ../static/styleContact.css 
+
+//- just copy paste content from index.pug to here
+//- as index.pug is not part of this project it is only for learning purpose
+block content 
+    div.container
+        h1 Contact us
+        form(action="/contact", method="post", class="myForm")
+            input(type="text", class="myInput", name="name", placeholder="Enter your name") 
+            input(type="phone", class="myInput", name="phone", placeholder="Enter your phone number") 
+            input(type="email", class="myInput", name="email", placeholder="Enter your email id") 
+            input(type="text", class="myInput", name="adress", placeholder="Enter your address") 
+            input(type="text", class="myInput", name="desc", placeholder="Enter your concern") 
+            button(class="btn")
+                | Submit
