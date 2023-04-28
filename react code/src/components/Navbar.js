@@ -29,9 +29,17 @@ const Navbar = () => {
                             <Link className={`nav-link ${location.pathname === "/" ? "active" : ""}`} aria-current="page" to="/">Home</Link>
                         </li>
                         <li className="nav-item">
+                            <Link className={`nav-link ${location.pathname === "/scanner" ? "active" : ""}`} to="/scanner">Scanner</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className={`nav-link ${location.pathname === "/" ? "active" : ""}`} to="/">Notes</Link>
+                        </li>
+                        <li className="nav-item">
                             <Link className={`nav-link ${location.pathname === "/about" ? "active" : ""}`} to="/about">About</Link>
                         </li>
-
+                        <li className="nav-item">
+                            <Link className={`nav-link ${location.pathname === "/contact" ? "active" : ""}`} to="/contact">Contact Us</Link>
+                        </li>
                     </ul>
 
                     {/* if user if logged in show them 
