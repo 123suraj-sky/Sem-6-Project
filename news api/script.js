@@ -34,7 +34,7 @@ async function getJoke() {
             console.log(data.articles[index].title);
 
             // create paragraph element and add data to it
-            const pElement = document.createElement('p');
+            const pElement = document.createElement('li');
             pElement.innerHTML = data.articles[index].title;
 
             // append pElement to jokeElement

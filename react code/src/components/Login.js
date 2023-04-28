@@ -45,7 +45,7 @@ const Login = (props) => {
 
     return (
         <div className='mt-3'>
-            <h2 className='mb-5'>Login to continue to iNotebook</h2>
+            <h2 className='mb-5'>Login to continue to AgroSolutions</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">Email address</label>
