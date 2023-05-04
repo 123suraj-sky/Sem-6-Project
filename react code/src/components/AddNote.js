@@ -1,6 +1,7 @@
 // rafce -> shortcut used
 import React, { useContext, useState } from 'react'
 import noteContext from '../context/notes/noteContext';
+import './css/Home.css'
 
 const AddNote = (props) => {
     const context = useContext(noteContext);
@@ -24,8 +25,8 @@ const AddNote = (props) => {
     }
 
     return (
-        <div className="container my-3">
-            <h2>Add a Note</h2>
+        <div className="container my-3 title">
+            <h2 className='d-flex justify-content-center'>Ask a Query</h2>
 
             {/* form to show notes */}
             <form className='my-3'>
@@ -42,9 +43,7 @@ const AddNote = (props) => {
                     <input value={note.tag} type="text" className="form-control" id="tag" name='tag' onChange={onChange} required />
                 </div>
 
-                <button disabled={note.title.length < 5 || note.description.length < 5} type="submit" className="btn btn-primary" onClick={handleCreateNote}>Add Note</button>
-                {/* in cwh video he used handleClick in 
-                place of handleCreateNote */}
+                <button disabled={note.title.length < 5 || note.description.length < 5} type="submit" className="btn btn-primary" onClick={handleCreateNote}>Ask Query</button>
             </form>
         </div>
     )

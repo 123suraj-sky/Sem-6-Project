@@ -34,8 +34,9 @@ const Navbar = () => {
                             <Link className={`nav-link ${location.pathname === "/scanner" ? "active" : ""}`} to="/scanner">Scanner</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className={`nav-link ${location.pathname === "/notes" ? "active" : ""}`} to="/notes">Notes</Link>
+                            <Link className={`nav-link ${location.pathname === "/notes" ? "active" : ""}`} to="/notes">Query</Link>
                         </li>
+                        {/* just change the notes name to query - logic is same as of notes */}
                         <li className="nav-item">
                             <Link className={`nav-link ${location.pathname === "/about" ? "active" : ""}`} to="/about">About</Link>
                         </li>

@@ -141,12 +141,9 @@ def main():
     st.set_option('deprecation.showfileUploaderEncoding', False)
     st.markdown('<style>body{-webkit-app-region: drag;}</style>', unsafe_allow_html=True)
     st.title("Plant Disease Detection & Classification")
-    st.text("Build with Streamlit and Tensorflow")
     activities = ["About" ,"Plant Disease"]
     choice = st.sidebar.selectbox("Select Activty",activities)
     enhance_type = st.sidebar.radio("Type",["Detection","Classification","Treatment"])
-    st.sidebar.title("Developed by :")
-    st.sidebar.text("Atlas Class - AI for Start-UP")
 	
 	
     if choice =='About':

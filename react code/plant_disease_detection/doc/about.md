@@ -1,17 +1,17 @@
 ## About Project
 
-Sebuah aplikasi yang memudahkan petani, ilmuwan dan ahli botani untuk mendeteksi jenis tanaman dan mendeteksi segala jenis penyakit di dalamnya. Aplikasi mengirimkan gambar tanaman ke server untuk dianalisis menggunakan model pengklasifikasi CNN. Setelah terdeteksi, penyakit dan solusinya ditampilkan kepada pengguna.
+An application that makes it easier for farmers, scientists and botanists to detect plant types and detect all kinds of diseases in them. The application sends plant images to the server for analysis using the CNN classifier model. Once detected, the disease and its solution are shown to the user.
 
 ---
 
 ## Model
 
-Mengidentifikasi 5 kelas untuk Deteksi Penyakit dan 24 kelas untuk Klasifikasi Penyakit**
+Identify 5 classes for Disease Detection and 24 classes for Disease Classification
 
            - Disease Classification Classes
 
-                       - Apple___Apple_scab
-                       - Apple___Black_rot
+               - Apple___Apple_scab
+               - Apple___Black_rot
 			   - Apple___Cedar_apple_rust
 			   - Apple___healthy
 			   - Blueberry___healthy
@@ -34,6 +34,7 @@ Mengidentifikasi 5 kelas untuk Deteksi Penyakit dan 24 kelas untuk Klasifikasi P
 			   - Strawberry___healthy
 			   - Strawberry___Leaf_scorch
 			
+
             - Disease Detection Classes
             
 			   - Cherry___healthy
@@ -42,4 +43,3 @@ Mengidentifikasi 5 kelas untuk Deteksi Penyakit dan 24 kelas untuk Klasifikasi P
 			   - Grape___Esca_Black_Measles
 			   - Grape___healthy
 			   - Grape___Leaf_blight_Isariopsis_Leaf_Spot
----

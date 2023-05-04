@@ -3,6 +3,13 @@ import React, { useState, useEffect } from 'react';
 import { TwitterTimelineEmbed } from 'react-twitter-embed'; // for showing twitter feeds
 import './css/Home.css';
 
+// logos
+import logo1 from './logo/jal-shakti-abhiyan-sanchay-jal-behtar-kal.png'
+import logo2 from './logo/AWG-g20.jpg'
+import logo3 from './logo/azadi-ka-amrit-mahotsav.png'
+import logo4 from './logo/logo_G20.png'
+import logo5 from './logo/swachh-bharat-swachh-vidyalaya.png'
+
 
 
 // api related stuff
@@ -67,29 +74,27 @@ const Home = () => {
 
     return (
         <div className='body'>
-            {/* <Notes showAlert={showAlert} /> */}
-
             {/* title here */}
             <div className="d-flex justify-content-center h1 mb-5 title">
-                Title Here
+                Agro Solutions
             </div>
 
             {/* differenet logos */}
             <div className="container d-flex justify-content-around mt-3 mb-5 logos">
                 <div className="bodyLogo">
-                    logo
+                    <a href="https://ejalshakti.gov.in/jsa/JSA_Login.aspx?aspxerrorpath=/JSA/JSA/Home.aspx"><img className='rounded' src={logo1} alt="logo1" /></a>
                 </div>
                 <div className="bodyLogo">
-                    logo
+                    <a href="http://agriwelfare.gov.in//awg-g20/"><img className='rounded' src={logo2} alt="logo2" /></a>
                 </div>
                 <div className="bodyLogo">
-                    logo
+                    <a href="https://amritmahotsav.nic.in/"><img className='rounded' src={logo3} alt="logo3" /></a>
                 </div>
                 <div className="bodyLogo">
-                    logo
+                    <a href="https://www.g20.org/en/"><img className='rounded' src={logo4} alt="logo4" /></a>
                 </div>
                 <div className="bodyLogo">
-                    logo
+                    <a href="https://swachhbharat.mygov.in/"><img className='rounded' src={logo5} alt="logo5" /></a>
                 </div>
             </div>
 
@@ -109,32 +114,25 @@ const Home = () => {
                     </ul>
                 </div>
 
-                <div className="menu">
-                    <ul>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                    </ul>
+                <div className="twitter">
+                    <TwitterTimelineEmbed
+                        sourceType="profile"
+                        screenName="upagriculture"
+                        options={{ height: 800, width: 400 }}
+                    />
                 </div>
 
                 <div className="twitter">
                     <TwitterTimelineEmbed
                         sourceType="profile"
                         screenName="AgriGoI"
-                        options={{ height: 400, width: 400 }}
+                        options={{ height: 800, width: 400 }}
                     />
                 </div>
             </div>
 
             {/* footer */}
-            
+
         </div>
     )
 }
