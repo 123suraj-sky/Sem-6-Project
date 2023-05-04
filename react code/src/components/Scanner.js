@@ -8,7 +8,7 @@ const Scanner = () => {
       {/* use a.name and a.class when not using 
       useEffect */}
 
-      this is scanner page
+      <iframe src="http://localhost:8501/" height="1500" width="1300" title="plant disease detection"></iframe>
     </div>
   )
 }
