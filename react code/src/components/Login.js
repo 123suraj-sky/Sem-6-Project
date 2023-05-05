@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 //* in react-router-dom v6, useNavigate is used instead of useHistory
+import './css/Home.css'
 
 const Login = (props) => {
     const [credentials, setCredentials] = useState({ email: "", password: "" });
@@ -27,10 +28,9 @@ const Login = (props) => {
             console.log("Login Success");
 
             // Redirect
-            navigate("/");
-            
-            //* in react-router-dom v6, history.push() is replaced by history()
+            navigate("/notes");
 
+            //* in react-router-dom v6, history.push() is replaced by history()
         }
         else {
             // alert("Invalid Credentials");
@@ -44,7 +44,7 @@ const Login = (props) => {
     }
 
     return (
-        <div className='mt-3'>
+        <div className='mt-3 title'>
             <h2 className='mb-5'>Login to continue to AgroSolutions</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
@@ -56,7 +56,9 @@ const Login = (props) => {
                     <label htmlFor="password" className="form-label">Password</label>
                     <input onChange={onChange} type="password" value={credentials.password} className="form-control" id="password" name='password' />
                 </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <div className='d-flex justify-content-center'>
+                    <button type="submit" className="btn btn-primary mt-5">Submit</button>
+                </div>
             </form>
         </div>
     )

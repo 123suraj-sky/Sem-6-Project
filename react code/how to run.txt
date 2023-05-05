@@ -1,5 +1,5 @@
 1) plant disease detection
--> cd plant_disease_detection
+-> cd .\plant_disease_detection\
 -> .\env\Scripts\activate
 -> streamlit run app.py
 

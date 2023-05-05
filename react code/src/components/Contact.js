@@ -9,10 +9,10 @@ const Contact = () => {
       </div>
 
       <ul className='d-flex justify-content-between align-items-center mx-5 px-5 list-unstyled h3'>
-        <li className='my-5'><i class="fa-brands fa-facebook"></i></li>
-        <li className='my-5'><i class="fa-brands fa-instagram"></i></li>
-        <li className='my-5'><i class="fa-brands fa-twitter"></i></li>
-        <li className='my-5'><i class="fa-brands fa-discord"></i></li>
+        <li className='my-5'><i className="fa-brands fa-facebook"></i></li>
+        <li className='my-5'><i className="fa-brands fa-instagram"></i></li>
+        <li className='my-5'><i className="fa-brands fa-twitter"></i></li>
+        <li className='my-5'><i className="fa-brands fa-discord"></i></li>
       </ul>
 
       <div className="d-flex align-items-center flex-column m-4 p-5">
