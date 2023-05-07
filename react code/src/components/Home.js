@@ -13,16 +13,18 @@ import logo5 from './logo/swachh-bharat-swachh-vidyalaya.png'
 
 
 // api related stuff
-const apiKey = "41FfB7uFOaXpSw2S8GzsrA==B1V8qCwAg08fRT28";
+// const apiKey = "41FfB7uFOaXpSw2S8GzsrA==B1V8qCwAg08fRT28";
+// const apiKey = "pub_21307a16a1da3e7625c4a9d5324f5b70d7710";
 
 const options = {
     method: 'GET',
-    headers: {
-        'X-Api-Key': apiKey,
-    }
+    // headers: {
+    //     'X-Api-Key': apiKey,
+    // }
 }
 
-const apiURL = "https://api.api-ninjas.com/v1/dadjokes?limit=10"
+// const apiURL = "https://api.api-ninjas.com/v1/dadjokes?limit=10"
+const apiURL = "https://newsdata.io/api/1/news?apikey=pub_21307a16a1da3e7625c4a9d5324f5b70d7710&q=agriculture&country=in&language=en"
 
 
 let news = []; // storing news items
@@ -45,7 +47,7 @@ async function GetNews() {
             // create paragraph element and add data to it
             const pElement = document.createElement('li');
             //! pElement.innerHTML = data.results[index].title;
-            pElement.innerHTML = data[index].joke;
+            pElement.innerHTML = data.results[index].title;
             console.log(pElement)
             news.push(pElement);
         }

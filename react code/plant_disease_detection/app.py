@@ -85,7 +85,7 @@ vis_util.visualize_boxes_and_labels_on_image_array(
     np.squeeze(classes).astype(np.int32),
     np.squeeze(scores),
     category_index,
-    use_normalized_coordinates=True,
+    use_normalized_coordinates=False,
     line_thickness=8,
     min_score_thresh=0.60)
 
