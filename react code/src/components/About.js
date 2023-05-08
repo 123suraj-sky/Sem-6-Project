@@ -12,7 +12,7 @@ const About = () => {
 
       <ul className='d-flex justify-content-between align-items-center m-5 p-5 list-unstyled h3'>
         <li className='my-5'>Suraj Kumar Yadav</li>
-        <li className='my-5'>Pushkar</li>
+        <li className='my-5'>Pushkar Kumar</li>
         <li className='my-5'>Abhishek Rao</li>
         <li className='my-5'>Shashwat Dwivedi</li>
       </ul>
