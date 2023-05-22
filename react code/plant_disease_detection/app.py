@@ -6,7 +6,7 @@ import csv
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import tensorflow as tf
-import keras_preprocessing
+# import keras_preprocessing
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -15,9 +15,9 @@ from PIL import Image , ImageEnhance
 from resizeimage import resizeimage
 from utils import label_map_util
 from utils import visualization_utils as vis_util
-from keras.preprocessing import image
+# from keras.preprocessing import image
 # from tensorflow.keras.utils import img_to_array
-from keras_preprocessing.image import ImageDataGenerator
+# from keras_preprocessing.image import ImageDataGenerator
 from pathlib import Path
 
 tf.executing_eagerly() #implemented by default in tensorflow2
