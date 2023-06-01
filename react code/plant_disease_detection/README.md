@@ -2,8 +2,7 @@
 
 ## About the Project
 An application that for farmers to detect the type of plant or crops, detect any kind of diseases in them. The app sends the image of the plant to the server where it is analysed using CNN classifier model. Once detected, the disease and its solutions are displayed to the user
-## Streamlit Link :
-[View](https://share.streamlit.io/adisyahadi/plant-disease-detection-using-tensorflow/main/app.py)
+
 ## Model
 
 Trained to identify 5 classes for **Disease Detection** and 24 classes for **Disease Classification**. 
@@ -45,16 +44,18 @@ Dataset can be downloaded form [kaggle](https://www.kaggle.com/abdallahalidev/pl
 			   - Grape___Leaf_blight_Isariopsis_Leaf_Spot 
 ---
 ## Cloning the project  
-* Run command `git clone "https://github.com/Saideepthi123/Plant-disease-detection.git"` and change into the project folder
+* Run command `git clone "https://github.com/123suraj-sky/Sem-6-Project"` and change into the project folder
+* See 'how to run.txt' inside 'react code' folder
+* Navigate to 'plant_disease_detection' folder
 * Create a virtual environment `env` in the repository (use virtualenv, etc)
 *  Activate virtual environment
 * Install the requirements
-
 
 To create virtual environment and install requirements run following commands
 ```shell script
 virtualenv env
 ```
+Note: If above method not work refer [venv - python docs](https://docs.python.org/3/library/venv.html) as it may be modified
 
 To activate the environment use following commands:
 Window: 
