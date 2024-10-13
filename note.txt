@@ -1,0 +1,15 @@
+in ideal cases backend is other repository but in this project for simplicity we place backend here
+
+
+inside backend folder install:
+    -> express --> npm i express
+    -> mongoose --> npm i mongoose
+    -> nodemon --> npm i -D nodemon --> as dev dependency
+"dependencies" : Packages required by your application in production. "devDependencies" : Packages that are only needed for local development and testing.
+
+write "npm run both" to start the server after installing concurrently and changing package.json
+see notes -> 55_iNotebookReactProjectSetup
+
+
+react-bootstrap can ideally be used
+it is bootstrap but optimized for react

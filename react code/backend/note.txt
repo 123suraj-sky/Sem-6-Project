@@ -1,5 +1,0 @@
-always must maintain file/folder structure
-
-names of files in models should start from capital letters
-
-to start server --> nodemon index.js
